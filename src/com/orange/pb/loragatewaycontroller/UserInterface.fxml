@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.orange.pb.loragatewaycontroller.UserInterfaceController">
+   <children>
+      <GridPane prefHeight="378.0" prefWidth="600.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="85.0" minHeight="8.0" prefHeight="85.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="144.0" minHeight="10.0" prefHeight="121.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="48.0" minHeight="10.0" prefHeight="19.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Select serial port device:" />
+            <Button fx:id="sendReadCommandBtn" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefWidth="170.0" text="Send READ command" GridPane.rowIndex="1" />
+            <ComboBox fx:id="serialPortCB" prefHeight="26.0" prefWidth="307.0" GridPane.columnIndex="1" />
+            <Button fx:id="sendSetCommandBtn" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="170.0" text="Send SET command" GridPane.rowIndex="2" />
+            <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <children>
+                  <Label alignment="CENTER" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="26.0" text="Frequency and channel:" />
+                  <Label alignment="CENTER" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="26.0" text="Address:" />
+                  <Label maxHeight="-Infinity" minHeight="-Infinity" prefHeight="26.0" text="Bandwidth:" />
+                  <Label maxHeight="-Infinity" minHeight="-Infinity" prefHeight="26.0" text="Coding rate:" />
+                  <Label maxHeight="-Infinity" minHeight="-Infinity" prefHeight="26.0" text="Spreading factor:" />
+               </children>
+            </VBox>
+            <VBox prefHeight="131.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <children>
+                  <ChoiceBox fx:id="freqChanCB" maxHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" />
+                  <TextField fx:id="addrTF" />
+                  <ChoiceBox fx:id="bandwidthCB" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="26.0" />
+                  <ChoiceBox fx:id="codingRateCB" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="26.0" />
+                  <ChoiceBox fx:id="spreadingFactorCB" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="26.0" />
+               </children></VBox>
+         </children>
+      </GridPane>
+      <ListView fx:id="recFramesLV" prefHeight="314.0" prefWidth="600.0" />
+      <ListView fx:id="logMsgsLV" prefHeight="297.0" prefWidth="600.0" />
+   </children>
+</VBox>
