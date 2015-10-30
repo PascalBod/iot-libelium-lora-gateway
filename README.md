@@ -96,7 +96,7 @@ for a PC running *[Linux Mint](http://www.linuxmint.com)*, a Linux distribution 
 [here](http://gluonhq.com/open-source/scene-builder/). Then, in Eclipse, set the path 
 to Scene Builder executable (**Window / Preferences / JavaFX**). This step is optional.
 
-## Import of project
+## Project import
 
 - in Eclipse, switch to the *Git* perspective and clone this Git repository. 
 
