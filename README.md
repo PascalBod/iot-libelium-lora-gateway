@@ -131,7 +131,7 @@ export CLASSPATH=$CLASSPATH:/usr/share/java/RXTXcomm.jar
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/jni/
 ```
 
-- run the JAR file created above:
+- run the JAR file created above (or the one in this repository):
 ```
 java -jar <JARFile>
 ```
