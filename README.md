@@ -78,11 +78,15 @@ The Libelium LoRa Gateway Controller uses the [RXTX library](http://rxtx.qbang.o
 to access the serial port. You have to install it in order to be able to run the application. 
 For installation procedure, please refer to [this page](http://rxtx.qbang.org/wiki/index.php/Installation).
 
-UI source code relies on [JavaFX](https://docs.oracle.com/javase/8/javafx/get-started-tutorial/jfx-architecture.htm#CHDFDAFF).  
+Additionally, the application relies on [JavaFX](https://docs.oracle.com/javase/8/javafx/get-started-tutorial/jfx-architecture.htm#CHDFDAFF).
 
-## Installation
+This repository provides source code files for Eclipse, but they can be used with another development environment as well, of course. 
 
-For a PC running *Linux Mint*, for instance, one possible way to run the application is:
+Eclipse *Mars* release, version 4.5.0, was used. Java version was 1.8. Installation and configuration as described below are for a PC running [Linux Mint](http://www.linuxmint.com).
+
+## Installation of source code for Eclipse
+
+Install RXTX library:
 
 - install package `librxtx-java` (version `2.2pre2-11`)
 - add `RXTXcomm.jar` to `CLASSPATH`:
